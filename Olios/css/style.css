@@ -1,0 +1,514 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../Lato2OFL/Lato-Thin.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-size: 10px;
+}
+.main_menu {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 700px;
+    float: left;
+    background: white;
+    align-items: center;
+    box-shadow: 7px 0 7px 0 lightgray;
+}
+
+main {
+    height: 700px;
+    width: 1140px;
+    background-image: url(../img/bg_main.png);
+    background-size: 1140px 700px;
+    font-family: 'Lato', monospace;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.main_menu_nav li {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+}
+
+.logo {
+    width: 20px;
+    padding: 20px;
+}
+.main_menu>a:hover .logo {
+    padding: 19px;
+    border-radius: 40px;
+    border: 1px solid blue;
+    box-shadow: 0 0 2px blue,
+        inset 0 0 1px blue;
+}
+.main_menu>a:active .logo {
+    padding: 19px;
+    border-radius: 40px;
+    border: 1px solid blue;
+    box-shadow: 0 0 2px blue,
+        inset 0 0 2px blue;
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.main_menu_nav ul img {
+    width: 20px;
+    height: 20px;
+}
+.main_menu_nav ul i {
+    width: 20px;
+    font-size: 20px;
+    color: gainsboro;
+    height: 20px;
+    padding-top: 30px;
+}
+.main_menu_nav ul a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.main_menu_nav ul a:hover i {
+    color: gray;
+}
+.main_menu_nav ul a:active {
+    box-shadow: inset 0 0 2px gray;
+}
+h3 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a:visited {
+    color: black;
+}
+
+/* ГЛАВНАЯ */
+
+.container {
+    width: 1140px;
+    position: relative;
+}
+
+.welcome {
+    display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.welcome h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+.welcome h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+button.more {
+    display: block;
+    font-size: 14px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+button.more:hover {
+opacity: 0.9;
+    box-shadow: inset 0 0 15px darkblue;
+}
+nav.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: -7px 0 7px 0 lightgray;
+    background-color: white;
+    height: inherit;
+    display: none;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.show {
+    display: none;
+}
+
+.show+label,
+nav>label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 30px;
+    float: right;
+    padding: 17px 20px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.show+label i,
+nav>label i {
+    width: 8px;
+    color: blue;
+}
+
+.show:checked+label+nav.menu {
+    display: block;
+}
+
+.show:checked+label:first-of-type {
+    opacity: 0;
+}
+
+label:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    float: right;
+}
+
+.menu ul {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 20px 20px 0;
+}
+
+.menu > a:hover {
+    text-decoration: underline;
+}
+.menu li:hover {
+    box-shadow: 0 0 10px lightgray;
+}
+.menu li:active {
+    box-shadow: inset 0 0 10px lightgray;
+}
+nav.menu > a:last-child {
+    display: block;
+    font-size: 14px;
+    margin-top: 50px;
+    padding: 30px;
+    color: blue;
+    font-weight: 600;
+}
+
+/* КАТАЛОГ */
+
+.products {
+    margin: 18px 120px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 730px;
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+figure.product {
+    display: inline-block;
+    margin: 0 0 30px 0;
+    padding: 15px;
+    background-color: white;
+    height: 200px;
+}
+
+figure.product:hover  {
+    box-shadow: inset 0 0 15px  rgba(200, 200, 200, 0.7);
+}
+
+.vertical img {
+    height: 100px;
+}
+
+a:nth-child(2) .horizontal {
+    width: 520px;
+}
+
+a:nth-child(2) .horizontal h2 {
+    font-size: 22px;
+}
+
+a:nth-child(2) .horizontal p {
+    font-size: 16px;
+}
+
+.horizontal {
+    width: 340px;
+}
+
+.horizontal img {
+    height: 200px;
+    display: inline-block;
+    float: left;
+}
+
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 600;
+    color: blue;
+}
+
+.horizontal figcaption {
+    padding-top: 40px;
+    float: right;
+    display: block;
+}
+
+a:nth-child(2) .horizontal figcaption {
+    padding-right: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.page_title {
+    display: inline-block;
+    padding: 10px 0 0 120px;
+}
+
+
+/* ТОВАР */
+
+.product_display {
+    height: 700px;
+    width: 460px;
+    background-color: white;
+    display: inline-block;
+    float: left;
+    box-shadow: inset 4px 0 6px 0 #e7e7e7;
+}
+
+.product_display img {
+    display: block;
+    width: 380px;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.product_display i {
+    font-size: 28px;
+    margin: 0 20px 0 0;
+    background-color: transparent;
+    display: inline-block;
+    float: right;
+    color: gainsboro;
+}
+.product_display i:nth-child(4), .product_display i:nth-child(3) {
+    float: left;
+    margin-left: 20px;
+    color: blue;
+}
+.product_display a:hover i {
+    color: gray;
+}
+figure.like {
+    float: right;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.like img {
+    margin: 0;
+    padding: 3px;
+    width: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.like figcaption {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+section {
+    padding: 30px 50px;
+}
+
+.product_description {
+    display: inline-block;
+    float: right;
+    background-color: #e7e7e7;
+    width: 500px;
+    height: 420px;
+    box-shadow: inset 4px 0 6px 0 lightgray;
+}
+
+.product_description p,
+.add_to_cart label {
+    font-size: 14px;
+    display: block;
+    width: 360px;
+}
+
+.product_description h3+p {
+    padding: 10px 0 20px 0;
+}
+
+.cost {
+    width: 80px;
+}
+
+.cost p {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.cost p:first-child {
+    text-transform: uppercase;
+}
+.cost .price {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cost span {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: black;
+}
+
+.add_to_cart {
+    width: 200px;
+    padding-left: 100px;
+}
+
+h2+h3 {
+    margin-top: 100px;
+}
+
+h3 span {
+    color: blue;
+}
+
+.cost,
+.add_to_cart {
+    display: inline-block;
+    float: left;
+}
+
+input[type="number"] {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    float: left;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+    float: left;
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover {
+opacity: 0.9;
+    box-shadow: inset 0 0 15px darkblue;
+}
+.add_to_cart label {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+/* ПОХОЖИЕ */
+
+.other_products {
+    display: inline-block;
+    float: right;
+    background-color: white;
+    width: 500px;
+    height: 160px;
+    box-shadow: inset 4px 0 6px 0 #e7e7e7;
+}
+.turned, .recomend {
+    display: inline-block;
+    float: left;
+    height: 160px;
+}
+.turned {
+    width: 20px; margin-top: 70px;
+}
+.turned h2 {
+     display: inline-block;
+    transform: translate(0,100%)  rotate(270deg);
+     transform-origin: left bottom;
+    width: 160px;
+    height: 20px;
+}
+.recomend img {
+    height: 100px;
+}
+.recomend {
+    width: 130px;
+    margin: 15px;
+}
+.recomend:hover {
+    box-shadow: 0 0 15px  rgba(200, 200, 200, 0.7);
+}
+/* ПОИСК */
+
+.search_page {
+    background-color: #e7e7e7;
+    height: 640px;
+    box-shadow: inset 4px 0 6px 0 #e7e7e7;
+}
+input[type="search"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 90px;
+    font-weight: 200;
+    width: 700px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+input[type="search"]:focus {
+    outline-color: transparent;
+}
