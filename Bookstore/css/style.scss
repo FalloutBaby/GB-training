@@ -1,0 +1,211 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+@font-face {
+    font-family: 'Segoe';
+    src: url('../font/Segoe WP.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin flex($direction,
+$j-content) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $j-content;
+}
+
+$website-width: 1140px;
+$padded-width: 940px;
+$green: #79b260;
+$lightgray: #dfdfdf;
+$lightborder: 1px solid $lightgray;
+.container {
+    width: $website-width;
+    margin: 0 auto;
+    border: $lightborder;
+}
+
+body {
+    font-family: 'Segoe';
+    font-size: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* header */
+
+header .account {
+    color: white;
+    background-color: #424242;
+    text-align: right;
+    width: $padded-width;
+    margin: 0;
+    padding: 0 100px;
+    a {
+        display: block;
+        color: white;
+        padding: 5px 20px;
+        height: 20px;
+    }
+}
+
+ul.sign_in {
+    display: block;
+    list-style-type: none;
+    text-transform: capitalize;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+    }
+}
+
+header div.search {
+    @include flex(row,
+    space-between);
+    width: $padded-width;
+    margin: 0 auto;
+    a {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.panel {
+    background: linear-gradient(white, #ededed);
+}
+
+.search form,
+.search a,
+.search .your_cart,
+.search svg,
+.search .wish_list {
+    margin: auto;
+}
+
+input[type="search"] {
+    height: 40px;
+    width: 300px;
+    border: 5px solid $green;
+    margin-right: 0;
+}
+
+button[type="submit"] {
+    margin-left: 0;
+    width: 110px;
+    height: 40px;
+    background-color: $green;
+    border-width: 0;
+    color: white;
+    font-size: 19px;
+}
+
+svg {
+    width: 2px;
+    height: 80px;
+    padding: 5px 0;
+}
+
+.header_nav {
+    border-top: $lightborder;
+    border-bottom: $lightborder;
+    ul {
+        width: $padded-width;
+        padding: 0;
+        @include flex(row,
+        space-between);
+        margin: auto;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 17px;
+            text-transform: capitalize;
+        }
+    }
+    a {
+        display: block;
+        padding: 10px;
+        color: #7c7c7c;
+    }
+    a:hover {
+        background: linear-gradient(to top, #73a35e 2%, #86c569 70%, #93d874 100%);
+        color: white;
+    }
+}
+
+main {
+    width: $padded-width;
+    margin: 20px auto;
+}
+
+main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Главная */
+
+.adv {
+    width: 640px;
+    height: 280px;
+    float: left;
+    border: 1px solid $lightgray;
+    margin-bottom: 20px;
+    background-image: url(../img/Banner.png);
+    background-size: cover;
+}
+
+.deals_adv {
+    width: 280px;
+    height: 280px;
+    float: right;
+    border: $lightborder;
+    margin-bottom: 20px;
+}
+
+.categories {
+    width: 200px;
+    float: left;
+    border: $lightborder;
+}
+
+.catalog {
+    @include flex(row,
+    space-between);
+    width: 720px;
+    float: right;
+    border: $lightborder;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #424242;
+}
+
+nav.footer_nav {
+    background-color: #6d6d6d;
+    @include flex(row,
+    space-between);
+    width: $padded-width;
+    padding: 20px 100px;
+    color: white;
+    text-transform: capitalize;
+    a {
+        display: block;
+        height: 30px;
+        width: auto;
+        color: white;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            line-height: 30px;
+        }
+    }
+}
