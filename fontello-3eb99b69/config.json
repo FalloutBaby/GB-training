@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "8ea66d97faf9816abd34f48f3f26d216",
+      "css": "bucket",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "598a5f2bcf3521d1615de8e1881ccd17",
+      "css": "clock",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b99d736cef489a3150ba8aac7c4e8403",
+      "css": "clock-1",
+      "code": 59394,
+      "src": "iconic"
+    }
+  ]
+}

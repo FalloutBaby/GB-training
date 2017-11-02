@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="bucket" unicode="&#xe800;" d="M522 780q174 0 286-49t104-105q-6-38-48-307t-44-281q-2-18-37-44t-107-50-154-24-153 24-106 50-37 44q0 2-4 30 82-6 163 35t139 117q28 0 48 20t20 50q0 28-20 49t-50 21q-28 0-49-21t-21-49q0-20 10-36-48-58-115-89t-131-27q-102 10-157 57t-59 109q-8 122 156 184-18 94-22 138-8 56 104 105t284 49z m-452-470q4-32 37-59t91-39l-32 204q-100-44-96-106z m452 212q82 0 157 18t113 39 38 35-38 35-112 39-158 18q-82 0-156-18t-112-39-38-35 38-35 112-39 156-18z" horiz-adv-x="913" />
+
+<glyph glyph-name="clock" unicode="&#xe801;" d="M500 546v-250q0-7-5-12t-13-5h-178q-8 0-13 5t-5 12v36q0 8 5 13t13 5h125v196q0 8 5 13t12 5h36q8 0 13-5t5-13z m232-196q0 83-41 152t-110 111-152 41-153-41-110-111-41-152 41-152 110-111 153-41 152 41 110 111 41 152z m125 0q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="clock-1" unicode="&#xe802;" d="M464 685q-138 0-236-98t-98-237 98-237 236-97 237 97 98 237-98 237-237 98z m1 112q184 0 315-131t131-316-131-315-315-132-316 132-131 315 131 316 316 131z m151-518l-80-80-109 111q-19 17-19 41l0 223 113 0 0-199z" horiz-adv-x="928" />
+</font>
+</defs>
+</svg>
