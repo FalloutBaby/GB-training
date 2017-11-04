@@ -1,0 +1,6 @@
+[1103/143738:ERROR:crash_report_database_win.cc(549)] CreateDirectory C:\Program Files (x86)\Cupduck\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[1103/143738:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[1103/143738:ERROR:crash_report_database_win.cc(549)] CreateDirectory C:\Program Files (x86)\Cupduck\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[1104/210404:ERROR:crash_report_database_win.cc(549)] CreateDirectory C:\Program Files (x86)\Cupduck\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[1104/210404:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[1104/210404:ERROR:crash_report_database_win.cc(549)] CreateDirectory C:\Program Files (x86)\Cupduck\Reports\Dump: Системе не удается найти указанный путь. (0x3)
