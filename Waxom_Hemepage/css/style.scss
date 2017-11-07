@@ -189,7 +189,7 @@ a.header_menu:hover {
         color: $text-brown;
     }
     .about:after {
-        border-bottom: 3px solid $text-brown;
+        border-bottom: 2px solid $text-brown;
     }
 }
 
@@ -203,7 +203,7 @@ a.header_menu:hover {
     display: block;
     width: 40px;
     padding-top: 15px;
-    border-bottom: 3px solid $light-gray;
+    border-bottom: 2px solid $light-gray;
     content: "";
     margin: auto;
 }
@@ -526,28 +526,45 @@ button.play {
     color: $white;
     text-transform: uppercase;
     text-align: center;
+    margin: 15px auto;
+    img {
+        height: 28px;
+        margin: auto;
+    }
     span {
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 200;
         font-family: $font-mont;
+        padding: 10px 0 0;
     }
     p {
         color: #c7b299;
     }
 }
 
+.stat:after {
+    display: block;
+    width: 20px;
+    padding-top: 5px;
+    border-bottom: 1px solid $white;
+    content: "";
+    margin: auto;
+}
 
 /* Posts */
 
 .posts {
-    padding: 20px 200px;
+    padding: 30px 200px;
     text-align: center;
+    h3 {
+        margin-bottom: 10px;
+    }
 }
 
 .recent {
     width: 400px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: $gray;
 }
 
@@ -566,7 +583,7 @@ button.play {
         color: $text-brown;
         text-decoration: none;
         font-size: 9px;
-        margin: 0 10px 10px;
+        margin: 0 10px 15px;
         text-align: left;
     }
     h4 {
@@ -633,7 +650,7 @@ button.play {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     width: 20px;
-    top: 37px;
+    top: 35px;
     left: 10px;
     font-family: $roboto;
     font-size: 9px;
@@ -641,7 +658,7 @@ button.play {
 }
 
 .l_r i {
-    margin: 20px 5px;
+    margin: 25px 5px 20px;
     width: 10px;
     height: 10px;
     font-size: 9px;
@@ -682,13 +699,14 @@ button.play {
     space-between);
 }
 
-.us,
-.recent_posts,
-.tweets,
 .widget_box {
     width: 180px;
 }
-
+.us, .recent_posts,
+.tweets {
+    padding-right: 10px;
+    width: 175px;
+}
 .us_header,
 .contacts_title {
     color: $white;
@@ -700,7 +718,9 @@ button.play {
     font-weight: 700;
     margin-top: 30px;
 }
-
+.recent_posts .contacts_title {
+    margin-bottom: 0;
+}
 .us_header {
     font-weight: 400;
     font-size: 22px;
@@ -738,13 +758,22 @@ time {
     font-family: $font-mont;
     color: #363636;
     font-weight: 300;
-    font-size: 9px;
+    font-size: 8px;
     transition: color 0.8s;
 }
 
 .us_about {
     color: #545454;
     transition: color 0.8s;
+    margin: 0;
+}
+
+.underline:after {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #252525;
+    content: "";
 }
 
 .tweet:hover,
