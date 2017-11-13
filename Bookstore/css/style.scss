@@ -13,8 +13,8 @@ $j-content) {
     justify-content: $j-content;
 }
 
-$website-width: 1140px;
-$padded-width: 940px;
+$website-width: 1280px;
+$padded-width: 996px;
 $green: #79b260;
 $lightgray: #dfdfdf;
 $lightborder: 1px solid $lightgray;
@@ -36,22 +36,25 @@ a:link {
 
 /* header */
 
-header .account {
+.account {
     color: white;
     background-color: #424242;
     text-align: right;
     width: $padded-width;
-    margin: 0;
-    padding: 0 100px;
+    margin: 0 auto;
+    padding: 0 142px;
     a {
         display: block;
         color: white;
         padding: 5px 20px;
         height: 20px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
     }
 }
 
-ul.sign_in {
+.sign_in {
     display: block;
     list-style-type: none;
     text-transform: capitalize;
@@ -61,39 +64,40 @@ ul.sign_in {
     }
 }
 
-header div.search {
-    @include flex(row,
-    space-between);
-    width: $padded-width;
-    margin: 0 auto;
-    a {
-        padding: 0;
-        margin: 0;
-    }
-}
-
 .panel {
     background: linear-gradient(white, #ededed);
+    display: flex;
+    flex-direction: row;
+    padding: 0 142px;
 }
 
-.search form,
-.search a,
-.search .your_cart,
-.search svg,
-.search .wish_list {
+.search_bar,
+.panel a,
+.your_cart,
+.wish_list {
     margin: auto;
 }
 
-input[type="search"] {
+.search_bar {
     height: 40px;
-    width: 300px;
-    border: 5px solid $green;
-    margin-right: 0;
+    width: 454px;
+    @include flex(row,
+    space-around);
+    border-radius: 2px;
+    background-color: $green;
+}
+
+input[type="search"] {
+    height: 34px;
+    width: 328px;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
 }
 
 button[type="submit"] {
     margin-left: 0;
-    width: 110px;
+    width: 120px;
     height: 40px;
     background-color: $green;
     border-width: 0;
@@ -101,10 +105,72 @@ button[type="submit"] {
     font-size: 19px;
 }
 
-svg {
-    width: 2px;
-    height: 80px;
-    padding: 5px 0;
+.fa-shopping-cart {
+    color: $green;
+}
+
+.cart_indexation {
+    display: inline-block;
+    color: #6d6d6d;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+}
+
+.cart_indexation_number {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.total_price {
+    color: #6d6d6d;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.checkout_button {
+    width: 81px;
+    height: 26px;
+    border-radius: 2px;
+    background: linear-gradient(to top, #202020 50%, #3f3f3f 100%);
+    font-family: 'Segoe';
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.your_cart {
+    width: 190px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.wish_list:before {
+    display: inline-block;
+    height: 70px;
+    width: 1.5px;
+    margin: auto 15px;
+    background: #c9c9c9;
+    content: "";
+}
+
+.star {
+    width: 25px;
+}
+
+.wish_list_count {
+    display: inline-block;
+    text-align: center;
+    background-color: #79b260;
+    border-radius: 16px;
+    width: 28px;
+    height: 16px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .header_nav {
@@ -119,7 +185,9 @@ svg {
         li {
             list-style-type: none;
             display: inline-block;
-            font-size: 17px;
+            color: #5b5b5b;
+            font-size: 19px;
+            font-weight: 400;
             text-transform: capitalize;
         }
     }
@@ -149,8 +217,8 @@ main:after {
 /* Главная */
 
 .adv {
-    width: 640px;
-    height: 280px;
+    width: 714px;
+    height: 304px;
     float: left;
     border: 1px solid $lightgray;
     margin-bottom: 20px;
@@ -158,26 +226,200 @@ main:after {
     background-size: cover;
 }
 
+.adv_name {
+    text-align: center;
+    margin: auto;
+    @include flex(column,
+    space-between);
+    color: white;
+}
+
+.adv_title {
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.adv_subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+adv_author {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
 .deals_adv {
-    width: 280px;
-    height: 280px;
+    width: 269px;
+    height: 305px;
     float: right;
     border: $lightborder;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: radial-gradient(white, #484848);
+}
+
+.deals_title {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.deals_subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.save_today {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.deal_price {
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.buy_now {
+    width: 108px;
+    height: 28px;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 26px;
+    text-shadow: 0px 1px 0px rgba(74, 74, 74, 0.75);
+    background: linear-gradient(to top, #73a35e 2%, #86c569 70%, #93d874 100%);
+    margin: auto;
+    border-radius: 4px;
+    border: 1px solid $green;
+}
+
+.buy_now:hover {
+    border: 1px solid darkgreen;
 }
 
 .categories {
-    width: 200px;
+    width: 188px;
     float: left;
     border: $lightborder;
+    padding: 8px 0;
+}
+
+.categories_title {
+    color: #6b6969;
+    font-size: 24.33px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-left: 18px;
+}
+
+.underline_category:after {
+    display: block;
+    height: 1px;
+    width: 139px;
+    background: $lightgray;
+    content: "";
+    margin-top: 5px;
+}
+
+.categories_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.top_categories_list {
+    color: #525252;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 31.667px;
+    display: block;
+    padding-left: 20px;
+}
+
+.fiction_list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sub_categories_list {
+    color: #555454;
+    font-size: 15.33px;
+    font-weight: 400;
+    line-height: 26.667px;
+    display: block;
+    padding-left: 24px;
+}
+
+.sub_categories_list:hover,
+.top_categories_list:hover {
+    background: linear-gradient(to top, #73a35e 2%, #86c569 70%, #93d874 100%);
+    color: white;
 }
 
 .catalog {
+    width: 798px;
+    float: right;
+}
+
+.folder {
+    display: inline-block;
+    float: left;
+    width: 140px;
+    line-height: 39px;
+    text-align: center;
+    color: #6b6969;
+    font-size: 18.33px;
+    line-height: 30px;
+    background: linear-gradient(white, #ededed);
+    border-color: $lightgray $lightgray transparent $lightgray;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+}
+
+.folder_1 {
+    color: #464646;
+    background: none;
+}
+
+.catalog_list {
     @include flex(row,
     space-between);
-    width: 720px;
-    float: right;
+    flex-wrap: wrap;
+    width: 100%;
     border: $lightborder;
+}
+
+.book_box {
+    width: 104px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto auto;
+}
+
+.book_cover {
+    width: 97px;
+}
+
+.book_title {
+    color: #646464;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.book_price {
+    color: #f05356;
+    font-size: 21.67px;
+    line-height: 20px;
 }
 
 
@@ -187,25 +429,42 @@ footer {
     background-color: #424242;
 }
 
-nav.footer_nav {
-    background-color: #6d6d6d;
+.footer_nav {
+    background-color: #545154;
     @include flex(row,
     space-between);
     width: $padded-width;
-    padding: 20px 100px;
-    color: white;
+    padding: 20px 142px;
+    color: #dddddd;
     text-transform: capitalize;
+    font-size: 19.67px;
+    font-weight: 300;
+    line-height: 20px;
     a {
         display: block;
         height: 30px;
         width: auto;
+        color: #dddddd;
+        font-size: 13.67px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    a:hover {
         color: white;
     }
     ul {
         padding-left: 0;
         li {
             list-style-type: none;
-            line-height: 30px;
         }
     }
+}
+
+.underline:after {
+    display: block;
+    height: 1px;
+    width: 170px;
+    background: #696969;
+    content: "";
+    margin-top: 8px;
 }

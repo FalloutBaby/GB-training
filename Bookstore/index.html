@@ -6,7 +6,7 @@
     <title>Books Online</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,23 +20,19 @@
                     <li><a href="">help</a></li>
                 </ul>
             </div>
-            <div class="panel"><div class="search">
+            <div class="panel">
                 <a href="index.html"><img src="svg/logo.svg" alt="BOOKS online" class="logo"></a>
-                <form action="#">
+                <form action="#" class="search_bar">
                     <input type="search">
                     <button type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
                 </form>
-                <div class="your_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Your cart</span>
-                    <span>(2 items)</span>
-                    <br><span>&#36;125.0</span>
-                    <a href="pages/cart.html"><button>Checkout</button>
-                    </a>
+                <div class="your_cart"><span class="cart_indexation"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your cart<span class="cart_indexation_number"> (2 items)</span></span>
+                    <span class="total_price">&#36;125.0 <a href="pages/cart.html"><button class="checkout_button">Checkout</button>
+                    </a></span>
+
                 </div>
-                <svg>
-                    <line x1="0" y1="0" x2="0" y2="80px" style="stroke: black;" />
-                </svg>
-                <div class="wish_list"><img src="svg/star.svg" alt="Star" class="star"><span>20</span><span>Wish list</span></div>
-                </div></div>
+                <div class="wish_list"><img src="svg/star.svg" alt="Star" class="star"><span class="wish_list_count">20</span><span>Wish list</span></div>
+            </div>
             <nav class="header_nav">
                 <ul>
                     <li><a href="">Computers</a></li>
@@ -52,71 +48,199 @@
             </nav>
         </header>
         <main>
-            <div class="adv">ADV</div>
-            <div class="deals_adv">DEALS</div>
-            <nav class="categories"><span>Categories</span></nav>
-            <section class="catalog">CATALOG</section>
+            <div class="adv">
+                <div class="adv_name">
+                    <h2 class="adv_title">A Wanted Man</h2>
+                    <h3 class="adv_subtitle">(Jack Reacher &#35;17)</h3><span class="adv_author">By Lee Child</span></div>
+            </div>
+            <div class="deals_adv">
+                <h2 class="deals_title">Deal of the Month</h2>
+                <h3 class="adv_subtitle">The Human Face of Big Data</h3><img src="" alt="Book" class="book_of_the_month"><span class="save_today">Save 45&#37; Today</span><span class="deal_price">&#36;27.50</span><a href="#" class="buy_now">Buy now</a></div>
+            <nav class="categories"><span class="categories_title">Categories</span>
+                <ul class="categories_list">
+                    <li><a href="#" class="top_categories_list">ALL</a></li>
+                    <li><a href="#" class="top_categories_list">Fiction &amp; Literature</a>
+                        <ul class="fiction_list">
+                            <li><a href="#" class="sub_categories_list underline_category">Children</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Science Fiction</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Fantasy</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Mystery</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Romance</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Horror</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Poetry</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Literature</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Crime</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="top_categories_list">Non - Fiction</a>
+                        <ul class="fiction_list">
+                            <li><a href="#" class="sub_categories_list underline_category">Comic</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Cook</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Psychology</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Medical</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Art</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Photography</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Law</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">History</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Business</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Computer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="top_categories_list">Other</a>
+                        <ul class="fiction_list">
+                            <li><a href="#" class="sub_categories_list underline_category">Baby</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Sex</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Travel</a></li>
+                            <li><a href="#" class="sub_categories_list underline_category">Science</a></li>
+                            <li><a href="#" class="sub_categories_list">Sports</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section class="catalog">
+            <div class="folders">
+            <a  href="#" class="folder folder_1">Best Sellers</a>
+            <a  href="#" class="folder folder_2">New Arrivals</a>
+            <a  href="#" class="folder folder_3">Used Books</a>
+            <a  href="#" class="folder folder_4">Special Offers</a>
+            </div>
+            <div class="catalog_list"><figure class="book_box">
+                <img src="img/book_1.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;50</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_2.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The War Of Art</figcaption>
+                <span class="book_price">&#36;60</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_3.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;25</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_4.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                <span class="book_price">&#36;80</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_5.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">Life Is What You Make It</figcaption>
+                <span class="book_price">&#36;200</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_6.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;200</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_7.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The War Of Art</figcaption>
+                <span class="book_price">&#36;150</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_8.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;100</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_9.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                <span class="book_price">&#36;152</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_10.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">Life Is What You Make It</figcaption>
+                <span class="book_price">&#36;200</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_11.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;220</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_12.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The War Of Art</figcaption>
+                <span class="book_price">&#36;10</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_13.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                <span class="book_price">&#36;22</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_14.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                <span class="book_price">&#36;300</span>
+            </figure>
+            <figure class="book_box">
+                <img src="img/book_15.png" alt="Book cover" class="book_cover">
+                <figcaption class="book_title">Life Is What You Make It</figcaption>
+                <span class="book_price">&#36;205</span>
+            </figure></div>
+            </section>
         </main>
         <footer>
             <nav class="footer_nav">
                 <div class="list"><label for="li1">Biography &amp; true stories</label>
                     <ul id="li1">
-                        <li><a href="">General</a></li>
-                        <li><a href="">Diaries, letters &amp; journals</a></li>
-                        <li><a href="">Memoirs</a></li>
-                        <li><a href="">True stories</a></li>
-                        <li><a href="">Generic exams</a></li>
-                        <li><a href="">GK Titles</a></li>
-                        <li><a href="">Medical entrance</a></li>
-                        <li><a href="">Other entrance exams</a></li>
-                        <li><a href="">PG entrance examinations</a></li>
-                        <li><a href="">Self-help titles</a></li>
-                        <li><a href="">Sociology</a></li>
+                        <li><a href="#" class="underline">General</a></li>
+                        <li><a href="#" class="underline">Diaries, letters &amp; journals</a></li>
+                        <li><a href="#" class="underline">Memoirs</a></li>
+                        <li><a href="#" class="underline">True stories</a></li>
+                        <li><a href="#" class="underline">Generic exams</a></li>
+                        <li><a href="#" class="underline">GK Titles</a></li>
+                        <li><a href="#" class="underline">Medical entrance</a></li>
+                        <li><a href="#" class="underline">Other entrance exams</a></li>
+                        <li><a href="#" class="underline">PG entrance examinations</a></li>
+                        <li><a href="#" class="underline">Self-help titles</a></li>
+                        <li><a href="#">Sociology</a></li>
                     </ul>
                 </div>
                 <div class="list"><label for="li2">Professional &amp; reference</label>
                     <ul id="li2">
-                        <li><a href="">Academic and reference</a></li>
-                        <li><a href="">Business trade</a></li>
-                        <li><a href="">Engineering and computer science</a></li>
-                        <li><a href="">Humanities, social sciences and languages</a></li>
-                        <li><a href="">introduction to computers</a></li>
-                        <li><a href="">Science and maths</a></li>
-                        <li><a href="">Trade business</a></li>
-                        <li><a href="">English language &amp; literature</a></li>
-                        <li><a href="">English language teaching</a></li>
-                        <li><a href="">environment awarness</a></li>
-                        <li><a href="">Environment protection</a></li>
+                        <li><a href="#" class="underline">Academic and reference</a></li>
+                        <li><a href="#" class="underline">Business trade</a></li>
+                        <li><a href="#" class="underline">Engineering and computer science</a></li>
+                        <li><a href="#" class="underline">Humanities, social sciences and languages</a></li>
+                        <li><a href="#" class="underline">introduction to computers</a></li>
+                        <li><a href="#" class="underline">Science and maths</a></li>
+                        <li><a href="#" class="underline">Trade business</a></li>
+                        <li><a href="#" class="underline">English language &amp; literature</a></li>
+                        <li><a href="#" class="underline">English language teaching</a></li>
+                        <li><a href="#" class="underline">environment awarness</a></li>
+                        <li><a href="#">Environment protection</a></li>
                     </ul>
                 </div>
                 <div class="list"><label for="li3">Earth sciences</label>
                     <ul id="li3">
-                        <li><a href="">Earth sciences</a></li>
-                        <li><a href="">geography</a></li>
-                        <li><a href="">the environment</a></li>
-                        <li><a href="">Regional &amp; area planning</a></li>
-                        <li><a href="">fantasy</a></li>
-                        <li><a href="">gay</a></li>
-                        <li><a href="">humorous</a></li>
-                        <li><a href="">interactive</a></li>
-                        <li><a href="">legal</a></li>
-                        <li><a href="">lesbian</a></li>
-                        <li><a href="">Men's adventure</a></li>
+                        <li><a href="#" class="underline">Earth sciences</a></li>
+                        <li><a href="#" class="underline">geography</a></li>
+                        <li><a href="#" class="underline">the environment</a></li>
+                        <li><a href="#" class="underline">Regional &amp; area planning</a></li>
+                        <li><a href="#" class="underline">fantasy</a></li>
+                        <li><a href="#" class="underline">gay</a></li>
+                        <li><a href="#" class="underline">humorous</a></li>
+                        <li><a href="#" class="underline">interactive</a></li>
+                        <li><a href="#" class="underline">legal</a></li>
+                        <li><a href="#" class="underline">lesbian</a></li>
+                        <li><a href="#">Men's adventure</a></li>
                     </ul>
                 </div>
                 <div class="list"><label for="li4">Mathematics</label>
                     <ul id="li4">
-                        <li><a href="">algebra</a></li>
-                        <li><a href="">Differential equations</a></li>
-                        <li><a href="">Discrete mathematics</a></li>
-                        <li><a href="">fourier analysis</a></li>
-                        <li><a href="">numerical analysis</a></li>
-                        <li><a href="">probability</a></li>
-                        <li><a href="">Statistical methods/data analysis</a></li>
-                        <li><a href="">stochastic and random processes</a></li>
-                        <li><a href="">topology</a></li>
-                        <li><a href="">statistics</a></li>
-                        <li><a href="">mathematics</a></li>
+                        <li><a href="#" class="underline">algebra</a></li>
+                        <li><a href="#" class="underline">Differential equations</a></li>
+                        <li><a href="#" class="underline">Discrete mathematics</a></li>
+                        <li><a href="#" class="underline">fourier analysis</a></li>
+                        <li><a href="#" class="underline">numerical analysis</a></li>
+                        <li><a href="#" class="underline">probability</a></li>
+                        <li><a href="#" class="underline">Statistical methods/data analysis</a></li>
+                        <li><a href="#" class="underline">stochastic and random processes</a></li>
+                        <li><a href="#" class="underline">topology</a></li>
+                        <li><a href="#" class="underline">statistics</a></li>
+                        <li><a href="#">mathematics</a></li>
                     </ul>
                 </div>
             </nav>
@@ -125,3 +249,5 @@
 </body>
 
 </html>
+
+scss Documents\GB\GB-training\Bookstore\css\style.scss Documents\GB\GB-training\Bookstore\css\style.css
