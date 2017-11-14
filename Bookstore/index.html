@@ -31,7 +31,7 @@
                     </a></span>
 
                 </div>
-                <div class="wish_list"><img src="svg/star.svg" alt="Star" class="star"><span class="wish_list_count">20</span><span>Wish list</span></div>
+                <div class="wish_list"><img src="svg/star.svg" alt="Star" class="star"><span class="wish_list_count">20</span><span class="wish_list_name">Wish list</span></div>
             </div>
             <nav class="header_nav">
                 <ul>
@@ -49,9 +49,11 @@
         </header>
         <main>
             <div class="adv">
+                <i class="fa fa-chevron-left l_r" aria-hidden="true"></i>
                 <div class="adv_name">
                     <h2 class="adv_title">A Wanted Man</h2>
                     <h3 class="adv_subtitle">(Jack Reacher &#35;17)</h3><span class="adv_author">By Lee Child</span></div>
+                <i class="fa fa-chevron-right l_r" aria-hidden="true"></i>
             </div>
             <div class="deals_adv">
                 <h2 class="deals_title">Deal of the Month</h2>
@@ -98,87 +100,102 @@
                 </ul>
             </nav>
             <section class="catalog">
-            <div class="folders">
-            <a  href="#" class="folder folder_1">Best Sellers</a>
-            <a  href="#" class="folder folder_2">New Arrivals</a>
-            <a  href="#" class="folder folder_3">Used Books</a>
-            <a  href="#" class="folder folder_4">Special Offers</a>
-            </div>
-            <div class="catalog_list"><figure class="book_box">
-                <img src="img/book_1.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;50</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_2.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The War Of Art</figcaption>
-                <span class="book_price">&#36;60</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_3.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;25</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_4.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
-                <span class="book_price">&#36;80</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_5.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">Life Is What You Make It</figcaption>
-                <span class="book_price">&#36;200</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_6.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;200</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_7.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The War Of Art</figcaption>
-                <span class="book_price">&#36;150</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_8.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;100</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_9.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
-                <span class="book_price">&#36;152</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_10.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">Life Is What You Make It</figcaption>
-                <span class="book_price">&#36;200</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_11.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;220</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_12.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The War Of Art</figcaption>
-                <span class="book_price">&#36;10</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_13.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
-                <span class="book_price">&#36;22</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_14.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">The Immortals Of Meluha</figcaption>
-                <span class="book_price">&#36;300</span>
-            </figure>
-            <figure class="book_box">
-                <img src="img/book_15.png" alt="Book cover" class="book_cover">
-                <figcaption class="book_title">Life Is What You Make It</figcaption>
-                <span class="book_price">&#36;205</span>
-            </figure></div>
+                <div class="folders">
+                    <a href="#" class="folder folder_1">Best Sellers</a>
+                    <a href="#" class="folder folder_2">New Arrivals</a>
+                    <a href="#" class="folder folder_3">Used Books</a>
+                    <a href="#" class="folder folder_4">Special Offers</a>
+                </div>
+                <div class="catalog_list">
+                    <figure class="book_box">
+                        <div class="sale">30&#37;<span class="off">off</span></div>
+                        <img src="img/book_1.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;50</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_2.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The War Of Art</figcaption>
+                        <span class="book_price">&#36;60</span>
+                    </figure>
+                    <figure class="book_box">
+                        <div class="sale">30&#37;<span class="off">off</span></div>
+                        <img src="img/book_3.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;25</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_4.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                        <span class="book_price">&#36;80</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_5.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">Life Is What You Make It</figcaption>
+                        <span class="book_price">&#36;200</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_6.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;200</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_7.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The War Of Art</figcaption>
+                        <span class="book_price">&#36;150</span>
+                    </figure>
+                    <figure class="book_box">
+                        <div class="sale">30&#37;<span class="off">off</span></div>
+                        <img src="img/book_8.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;100</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_9.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                        <span class="book_price">&#36;152</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_10.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">Life Is What You Make It</figcaption>
+                        <span class="book_price">&#36;200</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_11.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;220</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_12.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The War Of Art</figcaption>
+                        <span class="book_price">&#36;10</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_13.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Hare With Amber Eyes</figcaption>
+                        <span class="book_price">&#36;22</span>
+                    </figure>
+                    <figure class="book_box">
+                        <div class="sale">30&#37;<span class="off">off</span></div>
+                        <img src="img/book_14.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">The Immortals Of Meluha</figcaption>
+                        <span class="book_price">&#36;300</span>
+                    </figure>
+                    <figure class="book_box">
+                        <img src="img/book_15.png" alt="Book cover" class="book_cover">
+                        <figcaption class="book_title">Life Is What You Make It</figcaption>
+                        <span class="book_price">&#36;205</span>
+                    </figure>
+                    <ul class="pages">
+                        <li><a href="#" class="page">1</a></li>
+                        <li><a href="#" class="page">2</a></li>
+                        <li><a href="#" class="page current_page">3</a></li>
+                        <li><a href="#" class="page">4</a></li>
+                        <li><a href="#" class="page">5</a></li>
+                        <li><a href="#" class="page">6</a></li>
+                    </ul>
+                </div>
+
             </section>
         </main>
         <footer>
@@ -249,5 +266,3 @@
 </body>
 
 </html>
-
-scss Documents\GB\GB-training\Bookstore\css\style.scss Documents\GB\GB-training\Bookstore\css\style.css

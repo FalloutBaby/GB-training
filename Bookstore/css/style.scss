@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HelveticaLTStd';
+    src: url('../font/HelveticaLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @mixin flex($direction,
 $j-content) {
     display: flex;
@@ -89,12 +96,15 @@ a:link {
 
 input[type="search"] {
     height: 34px;
-    width: 328px;
+    width: 320px;
     border-radius: 3px;
     border: none;
     margin: auto;
+    padding: 0 8px;
 }
-
+input[type="search"]:focus {
+    outline-color: $green;
+}
 button[type="submit"] {
     margin-left: 0;
     width: 120px;
@@ -140,8 +150,12 @@ button[type="submit"] {
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
+    border: 1px solid;
+    border-color: #202020 #3f3f3f #3f3f3f #202020;
 }
-
+.checkout_button:focus {
+    outline-color: $green;
+}
 .your_cart {
     width: 190px;
     display: inline-flex;
@@ -173,6 +187,12 @@ button[type="submit"] {
     font-weight: 400;
 }
 
+wish_list_name {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 .header_nav {
     border-top: $lightborder;
     border-bottom: $lightborder;
@@ -200,6 +220,9 @@ button[type="submit"] {
         background: linear-gradient(to top, #73a35e 2%, #86c569 70%, #93d874 100%);
         color: white;
     }
+    a:active {
+        background: linear-gradient(to bottom, #73a35e 2%, #86c569 70%, #93d874 100%);
+    }
 }
 
 main {
@@ -217,6 +240,7 @@ main:after {
 /* Главная */
 
 .adv {
+    @include flex(row, space-between);
     width: 714px;
     height: 304px;
     float: left;
@@ -225,7 +249,15 @@ main:after {
     background-image: url(../img/Banner.png);
     background-size: cover;
 }
-
+.l_r {
+    background-color:  rgba(0, 0, 0, 0.46);
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    display: block;
+    border-radius: 38px;
+    color: black;
+}
 .adv_name {
     text-align: center;
     margin: auto;
@@ -307,6 +339,10 @@ adv_author {
     border: 1px solid darkgreen;
 }
 
+.buy_now:active {
+    background: linear-gradient(to bottom, #73a35e 2%, #86c569 70%, #93d874 100%);
+}
+
 .categories {
     width: 188px;
     float: left;
@@ -365,6 +401,11 @@ adv_author {
     color: white;
 }
 
+.sub_categories_list:active,
+.top_categories_list:active {
+    background: linear-gradient(to bottom, #73a35e 2%, #86c569 70%, #93d874 100%);
+}
+
 .catalog {
     width: 798px;
     float: right;
@@ -372,6 +413,7 @@ adv_author {
 
 .folder {
     display: inline-block;
+    font-family: 'HelveticaLTStd';
     float: left;
     width: 140px;
     line-height: 39px;
@@ -383,6 +425,10 @@ adv_author {
     border-color: $lightgray $lightgray transparent $lightgray;
     border-style: solid;
     border-width: 1px 1px 0 1px;
+}
+
+.folder:active {
+    background: linear-gradient(#ededed, white);
 }
 
 .folder_1 {
@@ -403,6 +449,39 @@ adv_author {
     padding: 20px;
     text-align: center;
     margin: 0 auto auto;
+    position: relative;
+}
+
+.book_box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.book_box:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sale {
+    position: absolute;
+    z-index: 7;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    background-color: #f05356;
+    color: white;
+    border-radius: 40px;
+    width: 40px;
+    height: 35px;
+    top: 14px;
+    right: 14px;
+    line-height: 18px;
+    padding-top: 5px;
+}
+
+.off {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .book_cover {
@@ -420,9 +499,48 @@ adv_author {
     color: #f05356;
     font-size: 21.67px;
     line-height: 20px;
+    font-family: 'HelveticaLTStd';
 }
 
+.pages {
+    list-style-type: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 3px;
+    li {
+        display: inline-block;
+    }
+}
 
+.page {
+    padding: 5px 10px;
+    color: #646464;
+    font-size: 15.67px;
+    font-weight: 300;
+    line-height: 30px;
+    border: 1px solid transparent;
+    font-family: 'HelveticaLTStd';
+}
+
+.page:hover {
+    border: 1px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+}
+
+.page:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.current_page {
+    border: 1px solid #dddddd;
+    border-bottom: 4px solid $green;
+}
+
+/* Товар */
+.breadcrumps, .book_page, .product_info_text, .product_review, .you_may_like {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
 /* footer */
 
 footer {
